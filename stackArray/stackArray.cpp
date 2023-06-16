@@ -22,7 +22,7 @@ public:
 		top++; //step 2
 		stack_array[top] = element; //step 3
 		cout << endl;
-		cout << element << "ditambahkan(pushed)" << endl;
+		cout << element << " ditambahkan(pushed)" << endl;
 
 		return element;
 	}
@@ -67,34 +67,34 @@ int main() {
 		cout << "4.exit" << endl;
 		cout << "masukan data : ";
 		cin >> ch;
-	}
 
-	switch (ch)
-	{
 
-	case '1': {
-		int element;
-		cout << "Enter an element : ";
-		cin >> element;
-		data.push(ch);
-		break;
-	}case '2': 
-		if (data.empty()) {
-			cout << "\nStack is empty." << endl;
+		switch (ch)
+		{
+
+		case '1': {
+			int element;
+			cout << "Enter an element : ";
+			cin >> element;
+			data.push(element);
 			break;
-		
+		}case '2':
+			if (data.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+
+			}
+			data.pop();
+			break;
+		case '3': {
+			data.display();
+			break;
+		}case '4': {
+			return 0;
+		}
+
+		default:
+			cout << "invalid input" << endl;
+		}
 	}
-		data.pop();
-		break;
-	case '3': {
-		data.display();
-		break;
-	}case '4': {
-		return 0;
-	}
-		
-	default:
-		cout << "invalid input" << endl;
-	}
-	return 0;
 }

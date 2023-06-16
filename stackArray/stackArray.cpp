@@ -53,3 +53,10 @@ public:
 		}
 	}
 };
+
+int main() {
+	StackArray data;
+	char ch;
+
+	
+}

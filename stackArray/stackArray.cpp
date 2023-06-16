@@ -58,5 +58,16 @@ int main() {
 	StackArray data;
 	char ch;
 
+	while (true)
+	{
+		cout << "Menu Stack" << endl;
+		cout << "1.push " << endl;
+		cout << "2.pop" << endl;
+		cout << "3.display" << endl;
+		cout << "4.exit" << endl;
+		cout << "masukan data : ";
+		cin >> ch;
+	}
+
 	
 }

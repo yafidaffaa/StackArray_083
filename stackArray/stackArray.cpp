@@ -78,5 +78,13 @@ int main() {
 		cin >> element;
 		data.push(ch);
 		break;
+	}case '2': 
+		if (data.empty()) {
+			cout << "\nStack is empty." << endl;
+			break;
+		
 	}
+		data.pop();
+		break;
+	
 }

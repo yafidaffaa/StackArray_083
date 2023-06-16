@@ -86,5 +86,15 @@ int main() {
 	}
 		data.pop();
 		break;
-	
+	case '3': {
+		data.display();
+		break;
+	}case '4': {
+		return 0;
+	}
+		
+	default:
+		cout << "invalid input" << endl;
+	}
+	return 0;
 }
